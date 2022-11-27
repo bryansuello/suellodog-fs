@@ -33,25 +33,25 @@ const Header = () => {
         <div className="container">
           <ul className="header-social-container">
             <li>
-              <a href="#" className="social-link">
+              <a href="/#" className="social-link">
                 <IonIcon icon={logoYoutube} />
               </a>
             </li>
 
             <li>
-              <a href="#" className="social-link">
+              <a href="/#" className="social-link">
                 <IonIcon icon={logoInstagram} />
               </a>
             </li>
 
             <li>
-              <a href="#" className="social-link">
+              <a href="/#" className="social-link">
                 <IonIcon icon={logoTwitter} />
               </a>
             </li>
 
             <li>
-              <a href="#" className="social-link">
+              <a href="/#" className="social-link">
                 <IonIcon icon={logoFacebook} />
               </a>
             </li>
@@ -110,15 +110,15 @@ const Header = () => {
 
           <div className="header-user-actions">
             <div className="my-account">
-              <a href="#">
+              <a href="/#">
                 <p>login / sign up</p>
               </a>
-              <a href="#">
+              <a href="/#">
                 <span>
                   my account
                   <IonIcon
                     icon={chevronDownOutline}
-                    classNameName="accnt-chevron"
+                    className="accnt-chevron"
                   />
                 </span>
               </a>
@@ -142,44 +142,44 @@ const Header = () => {
         <div className="container">
           <ul className="desktop-menu-category-list">
             <li className="menu-category">
-              <a href="#" className="menu-title">
+              <a href="/#" className="menu-title">
                 Home
               </a>
             </li>
 
             <li className="menu-category">
-              <a href="#" className="menu-title">
+              <a href="/#" className="menu-title">
                 Categories
               </a>
 
               <div className="dropdown-panel">
                 <ul className="dropdown-panel-list">
                   <li className="menu-title">
-                    <a href="#">Dog Accessories</a>
+                    <a href="/#">Dog Accessories</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Collar</a>
+                    <a href="/#">Collar</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Harness</a>
+                    <a href="/#">Harness</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Leash</a>
+                    <a href="/#">Leash</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Clothes</a>
+                    <a href="/#">Clothes</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Leads</a>
+                    <a href="/#">Leads</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">
+                    <a href="/#">
                       <img
                         src={DogAccessoriesBanner}
                         alt="dog accessories banner"
@@ -190,31 +190,31 @@ const Header = () => {
 
                 <ul className="dropdown-panel-list">
                   <li className="menu-title">
-                    <a href="#">Grooming</a>
+                    <a href="/#">Grooming</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Shampoo & Conditioner</a>
+                    <a href="/#">Shampoo & Conditioner</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Brush & Comb</a>
+                    <a href="/#">Brush & Comb</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Ear Cleaner</a>
+                    <a href="/#">Ear Cleaner</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Dental Supplies</a>
+                    <a href="/#">Dental Supplies</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Sunglasses</a>
+                    <a href="/#">Sunglasses</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">
+                    <a href="/#">
                       <img src={DogGroomingBanner} alt="dog grooming banner" />
                     </a>
                   </li>
@@ -222,31 +222,31 @@ const Header = () => {
 
                 <ul className="dropdown-panel-list">
                   <li className="menu-title">
-                    <a href="#">Training</a>
+                    <a href="/#">Training</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Clicker</a>
+                    <a href="/#">Clicker</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Portable Mat</a>
+                    <a href="/#">Portable Mat</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Poop Bag</a>
+                    <a href="/#">Poop Bag</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Treats</a>
+                    <a href="/#">Treats</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Whistle</a>
+                    <a href="/#">Whistle</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">
+                    <a href="/#">
                       <img src={DogTrainingBanner} alt="dog training banner" />
                     </a>
                   </li>
@@ -254,31 +254,31 @@ const Header = () => {
 
                 <ul className="dropdown-panel-list">
                   <li className="menu-title">
-                    <a href="#">Nutrition</a>
+                    <a href="/#">Nutrition</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Kibbles</a>
+                    <a href="/#">Kibbles</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Wet Food</a>
+                    <a href="/#">Wet Food</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Vitamins</a>
+                    <a href="/#">Vitamins</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Medicines</a>
+                    <a href="/#">Medicines</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">Injections</a>
+                    <a href="/#">Injections</a>
                   </li>
 
                   <li className="panel-list-item">
-                    <a href="#">
+                    <a href="/#">
                       <img
                         src={DogNutritionBanner}
                         alt="dog nutrition banner"
@@ -290,79 +290,79 @@ const Header = () => {
             </li>
 
             <li className="menu-category">
-              <a href="#" className="menu-title">
+              <a href="/#" className="menu-title">
                 Brands
               </a>
 
               <ul className="dropdown-list">
                 <li className="dropdown-item">
-                  <a href="#">SuelloDog</a>
+                  <a href="/#">SuelloDog</a>
                 </li>
 
                 <li className="dropdown-item">
-                  <a href="#">Kong</a>
+                  <a href="/#">Kong</a>
                 </li>
 
                 <li className="dropdown-item">
-                  <a href="#">Alpo</a>
+                  <a href="/#">Alpo</a>
                 </li>
 
                 <li className="dropdown-item">
-                  <a href="#">Royal canin</a>
+                  <a href="/#">Royal canin</a>
                 </li>
 
                 <li className="dropdown-item">
-                  <a href="#">Pedigree</a>
+                  <a href="/#">Pedigree</a>
                 </li>
               </ul>
             </li>
 
             <li className="menu-category">
-              <a href="#" className="menu-title">
+              <a href="/#" className="menu-title">
                 Services
               </a>
 
               <ul className="dropdown-list">
                 <li className="dropdown-item">
-                  <a href="#">Grooming</a>
+                  <a href="/#">Grooming</a>
                 </li>
 
                 <li className="dropdown-item">
-                  <a href="#">Training</a>
+                  <a href="/#">Training</a>
                 </li>
 
                 <li className="dropdown-item">
-                  <a href="#">Veterinary</a>
+                  <a href="/#">Veterinary</a>
                 </li>
 
                 <li className="dropdown-item">
-                  <a href="#">Boarding</a>
+                  <a href="/#">Boarding</a>
                 </li>
 
                 <li className="dropdown-item">
-                  <a href="#">Tagging</a>
+                  <a href="/#">Tagging</a>
                 </li>
 
                 <li className="dropdown-item">
-                  <a href="#">Dog Adoption</a>
+                  <a href="/#">Dog Adoption</a>
                 </li>
               </ul>
             </li>
 
             <li className="menu-category">
-              <a href="#blog" className="menu-title">
+              <a href="/#blog" className="menu-title">
                 blog
               </a>
             </li>
 
             <li className="menu-category">
-              <a href="#contact" className="menu-title">
+              <a href="/#contact" className="menu-title">
                 contact
               </a>
             </li>
 
             <li className="menu-category">
-              <a href="#about-us" className="menu-title">
+              <a href="/#about-us" className="menu-title">
                 about us
               </a>
             </li>
@@ -383,7 +383,7 @@ const Header = () => {
         </button>
 
         <button className="action-btn">
-          <a href="#top" className="link-to-top">
+          <a href="/#top" className="link-to-top">
             <IonIcon icon={homeOutline} classNameName="mobile-home-icon" />
           </a>
         </button>
@@ -410,7 +410,7 @@ const Header = () => {
 
         <ul className="mobile-menu-category-list">
           <li className="menu-category">
-            <a href="#" className="menu-title">
+            <a href="/#" className="menu-title">
               Home
             </a>
           </li>
@@ -427,25 +427,25 @@ const Header = () => {
 
             <ul className="submenu-category-list" data-accordion>
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Grooming
                 </a>
               </li>
 
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Training
                 </a>
               </li>
 
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Nutrition
                 </a>
               </li>
 
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Play
                 </a>
               </li>
@@ -464,25 +464,25 @@ const Header = () => {
 
             <ul className="submenu-category-list" data-accordion>
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Suellodog
                 </a>
               </li>
 
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Kong
                 </a>
               </li>
 
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Alpo
                 </a>
               </li>
 
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Royal Canin
                 </a>
               </li>
@@ -501,37 +501,37 @@ const Header = () => {
 
             <ul className="submenu-category-list" data-accordion>
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Grooming
                 </a>
               </li>
 
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Training
                 </a>
               </li>
 
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Veterinary
                 </a>
               </li>
 
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Boarding
                 </a>
               </li>
 
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Tagging
                 </a>
               </li>
 
               <li className="submenu-category">
-                <a href="#" className="submenu-title">
+                <a href="/#" className="submenu-title">
                   Dog Adoption
                 </a>
               </li>
@@ -539,19 +539,19 @@ const Header = () => {
           </li>
 
           <li className="menu-category">
-            <a href="#blog" className="menu-title">
+            <a href="/#blog" className="menu-title">
               Blog
             </a>
           </li>
 
           <li className="menu-category">
-            <a href="#contact" className="menu-title">
+            <a href="/#contact" className="menu-title">
               Contact
             </a>
           </li>
 
           <li className="menu-category">
-            <a href="#about-us" className="menu-title">
+            <a href="/#about-us" className="menu-title">
               About Us
             </a>
           </li>
@@ -561,25 +561,25 @@ const Header = () => {
           <ul className="menu-category-list">
             <ul className="menu-social-container">
               <li>
-                <a href="#" className="social-link">
+                <a href="/#" className="social-link">
                   <IonIcon icon={logoFacebook} />
                 </a>
               </li>
 
               <li>
-                <a href="#" className="social-link">
+                <a href="/#" className="social-link">
                   <IonIcon icon={logoTwitter} />
                 </a>
               </li>
 
               <li>
-                <a href="#" className="social-link">
+                <a href="/#" className="social-link">
                   <IonIcon icon={logoInstagram} />
                 </a>
               </li>
 
               <li>
-                <a href="#" className="social-link">
+                <a href="/#" className="social-link">
                   <IonIcon icon={logoLinkedin} />
                 </a>
               </li>

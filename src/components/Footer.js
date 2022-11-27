@@ -32,7 +32,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       <div class="footer-nav">
         <div class="container">
           <ul class="footer-nav-list">
@@ -41,31 +40,31 @@ const Footer = () => {
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Dog Accessories
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Essentials
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Nutrition
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Grooming
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Training
               </a>
             </li>
@@ -77,31 +76,31 @@ const Footer = () => {
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Leash
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Harness
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Dog Feeder
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Dog Bowls
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Treats
               </a>
             </li>
@@ -113,31 +112,31 @@ const Footer = () => {
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Delivery
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Locations
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Terms and conditions
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 About us
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Secure payment
               </a>
             </li>
@@ -149,31 +148,31 @@ const Footer = () => {
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Promotions
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 New products
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Best sales
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Contact us
               </a>
             </li>
 
             <li class="footer-nav-item">
-              <a href="#" class="footer-nav-link">
+              <a href="/#" class="footer-nav-link">
                 Sitemap
               </a>
             </li>
@@ -223,25 +222,25 @@ const Footer = () => {
             <li>
               <ul class="social-link">
                 <li class="footer-nav-item">
-                  <a href="#" class="footer-nav-link">
+                  <a href="/#" class="footer-nav-link">
                     <ion-icon name="logo-facebook"></ion-icon>
                   </a>
                 </li>
 
                 <li class="footer-nav-item">
-                  <a href="#" class="footer-nav-link">
+                  <a href="/#" class="footer-nav-link">
                     <ion-icon name="logo-twitter"></ion-icon>
                   </a>
                 </li>
 
                 <li class="footer-nav-item">
-                  <a href="#" class="footer-nav-link">
+                  <a href="/#" class="footer-nav-link">
                     <ion-icon name="logo-linkedin"></ion-icon>
                   </a>
                 </li>
 
                 <li class="footer-nav-item">
-                  <a href="#" class="footer-nav-link">
+                  <a href="/#" class="footer-nav-link">
                     <ion-icon name="logo-instagram"></ion-icon>
                   </a>
                 </li>
