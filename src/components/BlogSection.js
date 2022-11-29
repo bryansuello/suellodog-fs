@@ -9,7 +9,7 @@ const BlogSection = () => {
       <div class="container">
         <div class="blog-container has-scrollbar">
           <div class="blog-card">
-            <a href="#">
+            <a href="/#">
               <img
                 id="blog"
                 src={KingDog}
@@ -20,11 +20,11 @@ const BlogSection = () => {
             </a>
 
             <div class="blog-content">
-              <a href="#" class="blog-category">
+              <a href="/#" class="blog-category">
                 Nutrition
               </a>
 
-              <a href="#">
+              <a href="/#">
                 <h3 class="blog-title">
                   How To Feed A Dog Like A King - Without Any Money
                 </h3>
@@ -32,13 +32,13 @@ const BlogSection = () => {
 
               <p class="blog-meta">
                 By <cite>Geralt Orivia</cite> /{' '}
-                <time datetime="2022-04-06">Aug 26, 2022</time>
+                <time dateTime="2022-04-06">Aug 26, 2022</time>
               </p>
             </div>
           </div>
 
           <div class="blog-card">
-            <a href="#">
+            <a href="/#">
               <img
                 src={PeeDog}
                 alt="how to train your dog to pee in the toilet"
@@ -48,25 +48,25 @@ const BlogSection = () => {
             </a>
 
             <div class="blog-content">
-              <a href="#" class="blog-category">
+              <a href="/#" class="blog-category">
                 Training
               </a>
 
               <h3>
-                <a href="#" class="blog-title">
+                <a href="/#" class="blog-title">
                   How To Train Your Dog To Pee In The Toilet
                 </a>
               </h3>
 
               <p class="blog-meta">
                 By <cite>John Snow</cite> /{' '}
-                <time datetime="2022-02-26">Feb 26, 2022</time>
+                <time dateTime="2022-02-26">Feb 26, 2022</time>
               </p>
             </div>
           </div>
 
           <div class="blog-card">
-            <a href="#">
+            <a href="/#">
               <img
                 src={HappyDog}
                 alt="How Dogs Help Your Mental Health"
@@ -76,25 +76,25 @@ const BlogSection = () => {
             </a>
 
             <div class="blog-content">
-              <a href="#" class="blog-category">
+              <a href="/#" class="blog-category">
                 Training
               </a>
 
               <h3>
-                <a href="#" class="blog-title">
+                <a href="/#" class="blog-title">
                   How Dogs Help Your Health
                 </a>
               </h3>
 
               <p class="blog-meta">
                 By <cite>Saturo Gogo</cite> /{' '}
-                <time datetime="2022-11-10">Nov 10, 2021</time>
+                <time dateTime="2022-11-10">Nov 10, 2021</time>
               </p>
             </div>
           </div>
 
           <div class="blog-card">
-            <a href="#">
+            <a href="/#">
               <img
                 src={TalkingDog}
                 alt="Train Your Dog To Speak Like A Human"
@@ -104,19 +104,19 @@ const BlogSection = () => {
             </a>
 
             <div class="blog-content">
-              <a href="#" class="blog-category">
+              <a href="/#" class="blog-category">
                 News
               </a>
 
               <h3>
-                <a href="#" class="blog-title">
+                <a href="/#" class="blog-title">
                   How To Train Your Dog To Speak Like A Human
                 </a>
               </h3>
 
               <p class="blog-meta">
                 By <cite>Suello, Bryan</cite> /{' '}
-                <time datetime="2022-08-09">Aug 09, 2021</time>
+                <time dateTime="2022-08-09">Aug 09, 2021</time>
               </p>
             </div>
           </div>

@@ -1991,6 +1991,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /*-----------------------------------*\
+  #ABOUT Us
+\*-----------------------------------*/
+/*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
 footer {
@@ -1999,9 +2002,12 @@ footer {
 }
 
 .footer-section-top {
+  background: var(--eerie-black);
+  padding: 30px 0;
   margin-bottom: 30px;
   padding-bottom: 15px;
   border-bottom: 1px solid var(--onyx);
+  margin: 0;
 }
 
 .footer-about-us {

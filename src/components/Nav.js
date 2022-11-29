@@ -26,7 +26,26 @@ import {
   menuOutline,
 } from 'ionicons/icons';
 
+import { Link } from 'react-router-dom';
+
 const Header = () => {
+  // let searchField = document.querySelector('.search-field');
+  // let closeBtn = document.querySelector('.close-btn');
+  // searchField.addEventListener('focus', () => {
+  //   searchField.placeholder = '';
+  //   searchField.style.color = '#114042';
+  //   closeBtn.style.display = 'block';
+  //   closeBtn.addEventListener('click', () => {
+  //     searchField.value = '';
+  //     if (searchField.value.length === 0) {
+  //       closeBtn.style.display = 'none';
+  //     }
+  //   });
+  //   searchField.addEventListener('blur', () => {
+  //     searchField.placeholder = 'Search in SuelloDog';
+  //   });
+  // });
+
   return (
     <header>
       <div className="header-top">
@@ -79,17 +98,11 @@ const Header = () => {
           </div>
         </div>
       </div>
-
       <div id="top" className="header-main">
         <div className="container">
-          <a
-            href="https://bryansuello.dev"
-            className="header-logo"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link to="/" className="header-logo">
             <img src={HeaderLogo} alt="SuelloDog's Logo" />
-          </a>
+          </Link>
 
           <div className="header-search-container">
             <input
@@ -110,9 +123,12 @@ const Header = () => {
 
           <div className="header-user-actions">
             <div className="my-account">
-              <a href="/#">
+              {/* <a href="/#"> */}
+              <Link to="/login">
                 <p>login / sign up</p>
-              </a>
+              </Link>
+              {/* <p>login / sign up</p> */}
+              {/* </a> */}
               <a href="/#">
                 <span>
                   my account
@@ -137,14 +153,13 @@ const Header = () => {
           </div>
         </div>
       </div>
-
       <nav className="desktop-navigation-menu">
         <div className="container">
           <ul className="desktop-menu-category-list">
             <li className="menu-category">
-              <a href="/#" className="menu-title">
+              <Link to="/" className="menu-title">
                 Home
-              </a>
+              </Link>
             </li>
 
             <li className="menu-category">
@@ -369,7 +384,6 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-
       {/* MOBILE */}
       <div className="mobile-bottom-navigation">
         <button className="action-btn" data-mobile-menu-open-btn>
@@ -398,7 +412,6 @@ const Header = () => {
           <IonIcon icon={gridOutline} />
         </button>
       </div>
-
       <nav className="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
         <div className="menu-top">
           <h2 className="menu-title">Menu</h2>
