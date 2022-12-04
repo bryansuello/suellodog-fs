@@ -1697,6 +1697,12 @@ body::-webkit-scrollbar-thumb:hover {
   border-color: var(--eerie-black);
 }
 
+.btnClicked {
+  background: var(--eerie-black);
+  color: var(--white);
+  border-color: var(--eerie-black);
+}
+
 .product-grid .showcase-content {
   padding: 15px 20px 0;
 }

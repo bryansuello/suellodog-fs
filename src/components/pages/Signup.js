@@ -5,14 +5,31 @@ import registerImg from '../../assets/banners/banner-2.png';
 import logo from '../../assets/icons/nav-logo-g.png';
 
 const Signup = () => {
-  // const [email, setemail] = useState('');
-  // const [Fusername, setFusername] = useState('');
-  // const [Susername, setSusername] = useState('');
-  // const [pwd1, setpwd1] = useState('');
-  // const [pwd2, setpwd2] = useState('');
+  const [email, setEmail] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
-  // const handelsubmit = e => {
-  //   e.preventDefault();
+  const handleChange = e => {
+    e.preventDefault();
+    if (password !== confirmPassword) {
+      alert('passwords not the same');
+    } else {
+      console.log(password, confirmPassword);
+    }
+  };
+
+  // const [data, setData] = useState({
+  //   first_name: '',
+  //   last_name: '',
+  //   email: '',
+  //   password: '',
+  // });
+
+  // const handleChange = e => {
+  //   setData({ ...data, [e.target.value]: e.target.value });
+  //   console.log(data);
   // };
 
   return (
@@ -44,66 +61,75 @@ const Signup = () => {
         <div className="body-right">
           <div className="container">
             <h1>Sign Up</h1>
-            {/* <form onSubmit={handelsubmit}> */}
-            <form>
+            <form onSubmit={handleChange}>
               <div className="input-group">
-                <h5> First Name</h5>
                 <input
                   type="text"
-                  name="Fname"
-                  // value={Fusername}
-                  // onChange={e => {
-                  //   setFusername(e.target.value);
-                  // }}
+                  name="first_name"
+                  value={firstName}
+                  onChange={e => {
+                    setFirstName(e.target.value);
+                  }}
                   id="fname"
+                  placeholder="First Name"
+                  // onChange={handleChange}
+                  // value={data.first_name}
                 />
               </div>
               <div className="input-group">
-                <h5> Last Name</h5>
                 <input
                   type="text"
-                  name="lname"
-                  // value={Susername}
-                  // onChange={e => {
-                  //   setSusername(e.target.value);
-                  // }}
+                  name="last_name"
+                  value={lastName}
+                  onChange={e => {
+                    setLastName(e.target.value);
+                  }}
                   id="lname"
+                  placeholder="Last Name"
+                  // onChange={handleChange}
+                  // value={data.last_name}
                 />
               </div>
               <div className="input-group">
-                <h5> Email</h5>
                 <input
                   type="Email"
                   name="email"
-                  // value={email}
-                  // onChange={e => {
-                  //   setemail(e.target.value);
-                  // }}
+                  value={email}
+                  onChange={e => {
+                    setEmail(e.target.value);
+                  }}
                   id="email1"
+                  placeholder="Email"
+                  // onChange={handleChange}
+                  // value={data.email}
                 />
               </div>
               <div className="input-group">
-                <h5> Password</h5>
                 <input
                   type="password"
-                  // value={pwd1}
-                  // onChange={e => {
-                  //   setpwd1(e.target.value);
-                  // }}
-                  name="pwd"
+                  value={password}
+                  onChange={e => {
+                    setPassword(e.target.value);
+                  }}
+                  name="password"
                   id="pwd1"
+                  placeholder="Password"
+                  // onChange={handleChange}
+                  // value={data.password}
                 />
               </div>
               <div className="input-group">
-                <h5> Confirm Password</h5>
                 <input
                   type="password"
-                  // value={pwd2}
-                  // onChange={e => {
-                  //   setpwd2(e.target.value);
-                  // }}
-                  name="pwd"
+                  value={confirmPassword}
+                  onChange={e => {
+                    setConfirmPassword(e.target.value);
+                  }}
+                  name="password"
                   id="pwd2"
+                  placeholder="Confirm Password"
+                  // onChange={handleChange}
+                  // value={data.password}
                 />
               </div>
               <input type="submit" id="sbtn" value="Submit" />

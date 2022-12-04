@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import './App.css';
 import Header from './components/Nav';
 import Banner from './components/Banner';
@@ -14,9 +14,22 @@ import Login from './components/pages/Login';
 import { Route, Routes } from 'react-router';
 
 function App() {
+  const [likedItems, setLikedItems] = useState(0);
+  const addLikedItems = () => {
+    setLikedItems(count => count + 1);
+  };
+  const removeLikedItems = () => {
+    setLikedItems(count => count - 1);
+  };
+
+  const [cartItems, setCartItems] = useState(0);
+  const addToCart = () => {
+    setCartItems(count => count + 1);
+  };
+
   return (
     <Fragment>
-      <Header />
+      <Header likedItems={likedItems} cartItems={cartItems} />
       <Routes>
         <Route
           exact
@@ -25,7 +38,13 @@ function App() {
             <>
               <Banner />
               <Categories />
-              <ProductSection />
+              <ProductSection
+                likedItems={likedItems}
+                addLikedItems={addLikedItems}
+                removeLikedItems={removeLikedItems}
+                cartItems={cartItems}
+                addToCart={addToCart}
+              />
               <TestimonialSection />
               <BlogSection />
               <AboutUs />

@@ -54,8 +54,9 @@ import {
   star,
   starOutline,
 } from 'ionicons/icons';
+import { useState } from 'react';
 
-const ProductSection = () => {
+const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
   return (
     <div class="product-container">
       <div class="container">
@@ -986,7 +987,9 @@ const ProductSection = () => {
                       <del>₱1000.00</del>
                     </div>
 
-                    <button class="add-cart-btn">add to cart</button>
+                    <button class="add-cart-btn" onClick={addToCart}>
+                      add to cart
+                    </button>
 
                     <div class="showcase-status">
                       <div class="wrapper">
@@ -1058,7 +1061,7 @@ const ProductSection = () => {
                   <p class="showcase-badge">15%</p>
 
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 
@@ -1070,7 +1073,7 @@ const ProductSection = () => {
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button class="btn-action" onClick={addToCart}>
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
@@ -1118,7 +1121,7 @@ const ProductSection = () => {
                   <p class="showcase-badge angle black">sale</p>
 
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 
@@ -1130,7 +1133,7 @@ const ProductSection = () => {
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button class="btn-action" onClick={addToCart}>
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
@@ -1178,7 +1181,7 @@ const ProductSection = () => {
                   />
 
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 
@@ -1190,7 +1193,7 @@ const ProductSection = () => {
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button class="btn-action" onClick={addToCart}>
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
@@ -1240,7 +1243,7 @@ const ProductSection = () => {
                   <p class="showcase-badge angle pink">new</p>
 
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 
@@ -1252,7 +1255,7 @@ const ProductSection = () => {
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button class="btn-action" onClick={addToCart}>
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
@@ -1300,7 +1303,7 @@ const ProductSection = () => {
                   />
 
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 
@@ -1312,7 +1315,7 @@ const ProductSection = () => {
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button class="btn-action" onClick={addToCart}>
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
@@ -1362,7 +1365,7 @@ const ProductSection = () => {
                   <p class="showcase-badge angle black">sale</p>
 
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button class="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 
@@ -1422,7 +1425,7 @@ const ProductSection = () => {
                   />
 
                   <div class="showcase-actions">
-                    <button class="btn-action">
+                    <button className="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 

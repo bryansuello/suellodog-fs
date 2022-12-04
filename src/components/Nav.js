@@ -28,7 +28,7 @@ import {
 
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ likedItems, cartItems }) => {
   // let searchField = document.querySelector('.search-field');
   // let closeBtn = document.querySelector('.close-btn');
   // searchField.addEventListener('focus', () => {
@@ -142,13 +142,13 @@ const Header = () => {
 
             <button className="action-btn">
               <IonIcon icon={heartOutline} />
-              <span className="count">0</span>
+              <span className="count">{likedItems}</span>
             </button>
 
             <button className="action-btn">
               {/* <ion-icon name="bag-handle-outline"></ion-icon> */}
               <IonIcon icon={cartOutline} />
-              <span className="count">0</span>
+              <span className="count">{cartItems}</span>
             </button>
           </div>
         </div>
