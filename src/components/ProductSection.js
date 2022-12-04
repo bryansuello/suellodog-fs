@@ -58,73 +58,89 @@ import { useState } from 'react';
 
 const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
   return (
-    <div class="product-container">
-      <div class="container">
+    <div className="product-container">
+      <div className="container">
         {/* SIDEBAR */}
 
-        <div class="sidebar  has-scrollbar" data-mobile-menu>
-          <div class="sidebar-category">
-            <div class="sidebar-top">
-              <h2 class="sidebar-title">Category</h2>
+        <div className="sidebar  has-scrollbar" data-mobile-menu>
+          <div className="sidebar-category">
+            <div className="sidebar-top">
+              <h2 className="sidebar-title">Category</h2>
 
-              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+              <button className="sidebar-close-btn" data-mobile-menu-close-btn>
                 <IonIcon icon={closeOutline} />
               </button>
             </div>
 
-            <ul class="sidebar-menu-category-list">
-              <li class="sidebar-menu-category">
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-                  <div class="menu-title-flex">
+            <ul className="sidebar-menu-category-list">
+              <li className="sidebar-menu-category">
+                <button className="sidebar-accordion-menu" data-accordion-btn>
+                  <div className="menu-title-flex">
                     <img
                       src={Dog6}
                       alt="dog care"
                       width="20"
                       height="20"
-                      class="menu-title-img"
+                      className="menu-title-img"
                     />
 
-                    <p class="menu-title">Dog Care</p>
+                    <p className="menu-title">Dog Care</p>
                   </div>
 
                   <div>
-                    <IonIcon icon={addOutline} className="add-icon" />
-                    <IonIcon icon={removeOutline} className="remove-icon" />
+                    <IonIcon icon={addOutline} classNameName="add-icon" />
+                    <IonIcon icon={removeOutline} classNameName="remove-icon" />
                   </div>
                 </button>
 
-                <ul class="sidebar-submenu-category-list" data-accordion>
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Shampoo</p>
-                      <data value="300" class="stock" title="Available Stock">
+                <ul className="sidebar-submenu-category-list" data-accordion>
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Shampoo</p>
+                      <data
+                        value="300"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         9
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Powder</p>
-                      <data value="60" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Powder</p>
+                      <data
+                        value="60"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         5
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Brush</p>
-                      <data value="50" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Brush</p>
+                      <data
+                        value="50"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         3
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Dog Nail Clippers</p>
-                      <data value="87" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Dog Nail Clippers</p>
+                      <data
+                        value="87"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         2
                       </data>
                     </a>
@@ -132,58 +148,74 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                 </ul>
               </li>
 
-              <li class="sidebar-menu-category">
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-                  <div class="menu-title-flex">
+              <li className="sidebar-menu-category">
+                <button className="sidebar-accordion-menu" data-accordion-btn>
+                  <div className="menu-title-flex">
                     <img
                       src={Dog2}
                       alt="treats"
-                      class="menu-title-img"
+                      className="menu-title-img"
                       width="20"
                       height="20"
                     />
 
-                    <p class="menu-title">Treats</p>
+                    <p className="menu-title">Treats</p>
                   </div>
 
                   <div>
-                    <IonIcon icon={addOutline} className="add-icon" />
-                    <IonIcon icon={removeOutline} className="remove-icon" />
+                    <IonIcon icon={addOutline} classNameName="add-icon" />
+                    <IonIcon icon={removeOutline} classNameName="remove-icon" />
                   </div>
                 </button>
 
-                <ul class="sidebar-submenu-category-list" data-accordion>
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">SuelloDog KingDog</p>
-                      <data value="45" class="stock" title="Available Stock">
+                <ul className="sidebar-submenu-category-list" data-accordion>
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">SuelloDog KingDog</p>
+                      <data
+                        value="45"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         12
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Pedigree</p>
-                      <data value="75" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Pedigree</p>
+                      <data
+                        value="75"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         5
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Royal Canin</p>
-                      <data value="35" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Royal Canin</p>
+                      <data
+                        value="35"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         9
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Alpo</p>
-                      <data value="26" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Alpo</p>
+                      <data
+                        value="26"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         4
                       </data>
                     </a>
@@ -191,49 +223,61 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                 </ul>
               </li>
 
-              <li class="sidebar-menu-category">
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-                  <div class="menu-title-flex">
+              <li className="sidebar-menu-category">
+                <button className="sidebar-accordion-menu" data-accordion-btn>
+                  <div className="menu-title-flex">
                     <img
                       src={Dog4}
                       alt="food"
-                      class="menu-title-img"
+                      className="menu-title-img"
                       width="20"
                       height="20"
                     />
 
-                    <p class="menu-title">Food</p>
+                    <p className="menu-title">Food</p>
                   </div>
 
                   <div>
-                    <IonIcon icon={addOutline} className="add-icon" />
-                    <IonIcon icon={removeOutline} className="remove-icon" />
+                    <IonIcon icon={addOutline} classNameName="add-icon" />
+                    <IonIcon icon={removeOutline} classNameName="remove-icon" />
                   </div>
                 </button>
 
-                <ul class="sidebar-submenu-category-list" data-accordion>
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">SuelloDog KingDog Food</p>
-                      <data value="46" class="stock" title="Available Stock">
+                <ul className="sidebar-submenu-category-list" data-accordion>
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">SuelloDog KingDog Food</p>
+                      <data
+                        value="46"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         20
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Wet Food</p>
-                      <data value="73" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Wet Food</p>
+                      <data
+                        value="73"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         7
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Dry Food</p>
-                      <data value="61" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Dry Food</p>
+                      <data
+                        value="61"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         9
                       </data>
                     </a>
@@ -241,58 +285,74 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                 </ul>
               </li>
 
-              <li class="sidebar-menu-category">
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-                  <div class="menu-title-flex">
+              <li className="sidebar-menu-category">
+                <button className="sidebar-accordion-menu" data-accordion-btn>
+                  <div className="menu-title-flex">
                     <img
                       src={Dog5}
                       alt="dog accessories"
-                      class="menu-title-img"
+                      className="menu-title-img"
                       width="20"
                       height="20"
                     />
 
-                    <p class="menu-title">Dog Accessories</p>
+                    <p className="menu-title">Dog Accessories</p>
                   </div>
 
                   <div>
-                    <IonIcon icon={addOutline} className="add-icon" />
-                    <IonIcon icon={removeOutline} className="remove-icon" />
+                    <IonIcon icon={addOutline} classNameName="add-icon" />
+                    <IonIcon icon={removeOutline} classNameName="remove-icon" />
                   </div>
                 </button>
 
-                <ul class="sidebar-submenu-category-list" data-accordion>
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Collar</p>
-                      <data value="12" class="stock" title="Available Stock">
+                <ul className="sidebar-submenu-category-list" data-accordion>
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Collar</p>
+                      <data
+                        value="12"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         22
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Leash</p>
-                      <data value="60" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Leash</p>
+                      <data
+                        value="60"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         30
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Harness</p>
-                      <data value="50" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Harness</p>
+                      <data
+                        value="50"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         9
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Dog Clothes</p>
-                      <data value="87" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Dog Clothes</p>
+                      <data
+                        value="87"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         21
                       </data>
                     </a>
@@ -300,58 +360,74 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                 </ul>
               </li>
 
-              <li class="sidebar-menu-category">
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-                  <div class="menu-title-flex">
+              <li className="sidebar-menu-category">
+                <button className="sidebar-accordion-menu" data-accordion-btn>
+                  <div className="menu-title-flex">
                     <img
                       src={Dog7}
                       alt="grooming"
-                      class="menu-title-img"
+                      className="menu-title-img"
                       width="20"
                       height="20"
                     />
 
-                    <p class="menu-title">Grooming</p>
+                    <p className="menu-title">Grooming</p>
                   </div>
 
                   <div>
-                    <IonIcon icon={addOutline} className="add-icon" />
-                    <IonIcon icon={removeOutline} className="remove-icon" />
+                    <IonIcon icon={addOutline} classNameName="add-icon" />
+                    <IonIcon icon={removeOutline} classNameName="remove-icon" />
                   </div>
                 </button>
 
-                <ul class="sidebar-submenu-category-list" data-accordion>
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Shampoo</p>
-                      <data value="68" class="stock" title="Available Stock">
+                <ul className="sidebar-submenu-category-list" data-accordion>
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Shampoo</p>
+                      <data
+                        value="68"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         21
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Dog Comb</p>
-                      <data value="46" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Dog Comb</p>
+                      <data
+                        value="46"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         9
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Tick & Flea Remedy</p>
-                      <data value="79" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Tick & Flea Remedy</p>
+                      <data
+                        value="79"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         8
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Dog Eardrops</p>
-                      <data value="23" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Dog Eardrops</p>
+                      <data
+                        value="23"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         4
                       </data>
                     </a>
@@ -359,40 +435,48 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                 </ul>
               </li>
 
-              <li class="sidebar-menu-category">
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-                  <div class="menu-title-flex">
+              <li className="sidebar-menu-category">
+                <button className="sidebar-accordion-menu" data-accordion-btn>
+                  <div className="menu-title-flex">
                     <img
                       src={Dog9}
                       alt="dog health"
-                      class="menu-title-img"
+                      className="menu-title-img"
                       width="20"
                       height="20"
                     />
 
-                    <p class="menu-title">Health</p>
+                    <p className="menu-title">Health</p>
                   </div>
 
                   <div>
-                    <IonIcon icon={addOutline} className="add-icon" />
-                    <IonIcon icon={removeOutline} className="remove-icon" />
+                    <IonIcon icon={addOutline} classNameName="add-icon" />
+                    <IonIcon icon={removeOutline} classNameName="remove-icon" />
                   </div>
                 </button>
 
-                <ul class="sidebar-submenu-category-list" data-accordion>
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Dewormer</p>
-                      <data value="50" class="stock" title="Available Stock">
+                <ul className="sidebar-submenu-category-list" data-accordion>
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Dewormer</p>
+                      <data
+                        value="50"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         9
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Vaccination</p>
-                      <data value="48" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Vaccination</p>
+                      <data
+                        value="48"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         4
                       </data>
                     </a>
@@ -400,58 +484,74 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                 </ul>
               </li>
 
-              <li class="sidebar-menu-category">
-                <button class="sidebar-accordion-menu" data-accordion-btn>
-                  <div class="menu-title-flex">
+              <li className="sidebar-menu-category">
+                <button className="sidebar-accordion-menu" data-accordion-btn>
+                  <div className="menu-title-flex">
                     <img
                       src={Dog8}
                       alt="dog walks"
-                      class="menu-title-img"
+                      className="menu-title-img"
                       width="20"
                       height="20"
                     />
 
-                    <p class="menu-title">Dog Walks</p>
+                    <p className="menu-title">Dog Walks</p>
                   </div>
 
                   <div>
-                    <IonIcon icon={addOutline} className="add-icon" />
-                    <IonIcon icon={removeOutline} className="remove-icon" />
+                    <IonIcon icon={addOutline} classNameName="add-icon" />
+                    <IonIcon icon={removeOutline} classNameName="remove-icon" />
                   </div>
                 </button>
 
-                <ul class="sidebar-submenu-category-list" data-accordion>
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Leash</p>
-                      <data value="62" class="stock" title="Available Stock">
+                <ul className="sidebar-submenu-category-list" data-accordion>
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Leash</p>
+                      <data
+                        value="62"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         19
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Harness</p>
-                      <data value="35" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Harness</p>
+                      <data
+                        value="35"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         18
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Poop Bag</p>
-                      <data value="80" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Poop Bag</p>
+                      <data
+                        value="80"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         6
                       </data>
                     </a>
                   </li>
 
-                  <li class="sidebar-submenu-category">
-                    <a href="/#" class="sidebar-submenu-title">
-                      <p class="product-name">Dog Lead</p>
-                      <data value="75" class="stock" title="Available Stock">
+                  <li className="sidebar-submenu-category">
+                    <a href="/#" className="sidebar-submenu-title">
+                      <p className="product-name">Dog Lead</p>
+                      <data
+                        value="75"
+                        className="stock"
+                        title="Available Stock"
+                      >
                         9
                       </data>
                     </a>
@@ -461,28 +561,28 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
             </ul>
           </div>
 
-          <div class="product-showcase">
-            <h3 class="showcase-heading">best sellers</h3>
+          <div className="product-showcase">
+            <h3 className="showcase-heading">best sellers</h3>
 
-            <div class="showcase-wrapper">
-              <div class="showcase-container">
-                <div class="showcase">
-                  <a href="/#" class="showcase-img-box">
+            <div className="showcase-wrapper">
+              <div className="showcase-container">
+                <div className="showcase">
+                  <a href="/#" className="showcase-img-box">
                     <img
                       src={Product3}
                       alt="dog leash"
                       width="75"
                       height="75"
-                      class="showcase-img"
+                      className="showcase-img"
                     />
                   </a>
 
-                  <div class="showcase-content">
+                  <div className="showcase-content">
                     <a href="/#">
-                      <h4 class="showcase-title">suello dog unleash</h4>
+                      <h4 className="showcase-title">suello dog unleash</h4>
                     </a>
 
-                    <div class="showcase-rating">
+                    <div className="showcase-rating">
                       <IonIcon icon={star} />
                       <IonIcon icon={star} />
                       <IonIcon icon={star} />
@@ -490,31 +590,31 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                       <IonIcon icon={star} />
                     </div>
 
-                    <div class="price-box">
+                    <div className="price-box">
                       <del>₱1300</del>
-                      <p class="price">₱1100</p>
+                      <p className="price">₱1100</p>
                     </div>
                   </div>
                 </div>
 
-                <div class="showcase">
-                  <a href="/#" class="showcase-img-box">
+                <div className="showcase">
+                  <a href="/#" className="showcase-img-box">
                     <img
                       src={Product11}
                       alt="dog harness"
-                      class="showcase-img"
+                      className="showcase-img"
                       width="75"
                       height="75"
                     />
                   </a>
 
-                  <div class="showcase-content">
+                  <div className="showcase-content">
                     <a href="/#">
-                      <h4 class="showcase-title">
+                      <h4 className="showcase-title">
                         suellodog harness the power of air
                       </h4>
                     </a>
-                    <div class="showcase-rating">
+                    <div className="showcase-rating">
                       <IonIcon icon={star} />
                       <IonIcon icon={star} />
                       <IonIcon icon={star} />
@@ -522,29 +622,29 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                       <IonIcon icon={star} />
                     </div>
 
-                    <div class="price-box">
+                    <div className="price-box">
                       <del>₱2400</del>
-                      <p class="price">₱2300</p>
+                      <p className="price">₱2300</p>
                     </div>
                   </div>
                 </div>
 
-                <div class="showcase">
-                  <a href="/#" class="showcase-img-box">
+                <div className="showcase">
+                  <a href="/#" className="showcase-img-box">
                     <img
                       src={Product2}
                       alt="dog bowl"
-                      class="showcase-img"
+                      className="showcase-img"
                       width="75"
                       height="75"
                     />
                   </a>
 
-                  <div class="showcase-content">
+                  <div className="showcase-content">
                     <a href="/#">
-                      <h4 class="showcase-title">orange food bowl</h4>
+                      <h4 className="showcase-title">orange food bowl</h4>
                     </a>
-                    <div class="showcase-rating">
+                    <div className="showcase-rating">
                       <IonIcon icon={star} />
                       <IonIcon icon={star} />
                       <IonIcon icon={star} />
@@ -552,31 +652,31 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                       <IonIcon icon={star} />
                     </div>
 
-                    <div class="price-box">
+                    <div className="price-box">
                       <del>₱230.00</del>
-                      <p class="price">₱200.00</p>
+                      <p className="price">₱200.00</p>
                     </div>
                   </div>
                 </div>
 
-                <div class="showcase">
-                  <a href="/#" class="showcase-img-box">
+                <div className="showcase">
+                  <a href="/#" className="showcase-img-box">
                     <img
                       src={Product8}
                       alt="harness"
-                      class="showcase-img"
+                      className="showcase-img"
                       width="75"
                       height="75"
                     />
                   </a>
 
-                  <div class="showcase-content">
+                  <div className="showcase-content">
                     <a href="/#">
-                      <h4 class="showcase-title">
+                      <h4 className="showcase-title">
                         suelldog harness the power of darkness
                       </h4>
                     </a>
-                    <div class="showcase-rating">
+                    <div className="showcase-rating">
                       <IonIcon icon={star} />
                       <IonIcon icon={star} />
                       <IonIcon icon={star} />
@@ -584,9 +684,9 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                       <IonIcon icon={star} />
                     </div>
 
-                    <div class="price-box">
+                    <div className="price-box">
                       <del>₱2630</del>
-                      <p class="price">₱2500</p>
+                      <p className="price">₱2500</p>
                     </div>
                   </div>
                 </div>
@@ -595,124 +695,124 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
           </div>
         </div>
 
-        <div class="product-box">
+        <div className="product-box">
           {/* PRODUCT MINIMAL */}
 
-          <div class="product-minimal">
-            <div class="product-showcase">
-              <h2 id="shop-start" class="title">
+          <div className="product-minimal">
+            <div className="product-showcase">
+              <h2 id="shop-start" className="title">
                 New Arrivals
               </h2>
 
-              <div class="showcase-wrapper has-scrollbar">
-                <div class="showcase-container">
-                  <div class="showcase">
-                    <a href="/#" class="showcase-img-box">
+              <div className="showcase-wrapper has-scrollbar">
+                <div className="showcase-container">
+                  <div className="showcase">
+                    <a href="/#" className="showcase-img-box">
                       <img
                         src={Product13}
                         alt="suellodog medium dog harness"
                         width="70"
-                        class="showcase-img"
+                        className="showcase-img"
                       />
                     </a>
 
-                    <div class="showcase-content">
+                    <div className="showcase-content">
                       <a href="/#">
-                        <h4 class="showcase-title">
+                        <h4 className="showcase-title">
                           suellodog harness the power of rock harness
                         </h4>
                       </a>
 
-                      <a href="/#" class="showcase-category">
+                      <a href="/#" className="showcase-category">
                         dog accessories
                       </a>
 
-                      <div class="price-box">
-                        <p class="price">₱2100</p>
+                      <div className="price-box">
+                        <p className="price">₱2100</p>
                         <del>₱2200</del>
                       </div>
                     </div>
                   </div>
 
-                  <div class="showcase">
-                    <a href="/#" class="showcase-img-box">
+                  <div className="showcase">
+                    <a href="/#" className="showcase-img-box">
                       <img
                         src={Product14}
                         alt="suellodog puppy harness"
-                        class="showcase-img"
+                        className="showcase-img"
                         width="70"
                       />
                     </a>
 
-                    <div class="showcase-content">
+                    <div className="showcase-content">
                       <a href="/#">
-                        <h4 class="showcase-title">
+                        <h4 className="showcase-title">
                           suellodog puppy harness - red
                         </h4>
                       </a>
 
-                      <a href="/#" class="showcase-category">
+                      <a href="/#" className="showcase-category">
                         dog accessories
                       </a>
 
-                      <div class="price-box">
-                        <p class="price">₱1000</p>
+                      <div className="price-box">
+                        <p className="price">₱1000</p>
                         <del>₱1100</del>
                       </div>
                     </div>
                   </div>
 
-                  <div class="showcase">
-                    <a href="/#" class="showcase-img-box">
+                  <div className="showcase">
+                    <a href="/#" className="showcase-img-box">
                       <img
                         src={Product15}
                         alt="automatic dog feeder"
-                        class="showcase-img"
+                        className="showcase-img"
                         width="70"
                       />
                     </a>
 
-                    <div class="showcase-content">
+                    <div className="showcase-content">
                       <a href="/#">
-                        <h4 class="showcase-title">
+                        <h4 className="showcase-title">
                           suellodog automatic feeder medium
                         </h4>
                       </a>
 
-                      <a href="/#" class="showcase-category">
+                      <a href="/#" className="showcase-category">
                         essentials
                       </a>
 
-                      <div class="price-box">
-                        <p class="price">₱3000</p>
+                      <div className="price-box">
+                        <p className="price">₱3000</p>
                         <del>₱4000</del>
                       </div>
                     </div>
                   </div>
 
-                  <div class="showcase">
-                    <a href="/#" class="showcase-img-box">
+                  <div className="showcase">
+                    <a href="/#" className="showcase-img-box">
                       <img
                         src={Product16}
                         alt="suellodog ladydog harness"
-                        class="showcase-img"
+                        className="showcase-img"
                         width="70"
                       />
                     </a>
 
-                    <div class="showcase-content">
+                    <div className="showcase-content">
                       <a href="/#">
-                        <h4 class="showcase-title">
+                        <h4 className="showcase-title">
                           suellodog harness the power of ladies dog harness
                         </h4>
                       </a>
 
-                      <a href="/#" class="showcase-category">
+                      <a href="/#" className="showcase-category">
                         dog accessories
                       </a>
 
-                      <div class="price-box">
-                        <p class="price">₱3000</p>
+                      <div className="price-box">
+                        <p className="price">₱3000</p>
                         <del>₱3100</del>
                       </div>
                     </div>
@@ -721,112 +821,112 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
               </div>
             </div>
 
-            <div class="product-showcase">
-              <h2 class="title">Trending</h2>
+            <div className="product-showcase">
+              <h2 className="title">Trending</h2>
 
-              <div class="showcase-wrapper  has-scrollbar">
-                <div class="showcase-container">
-                  <div class="showcase">
-                    <a href="/#" class="showcase-img-box">
+              <div className="showcase-wrapper  has-scrollbar">
+                <div className="showcase-container">
+                  <div className="showcase">
+                    <a href="/#" className="showcase-img-box">
                       <img
                         src={Product17}
                         alt="dog shampoo"
-                        class="showcase-img"
+                        className="showcase-img"
                         width="70"
                       />
                     </a>
 
-                    <div class="showcase-content">
+                    <div className="showcase-content">
                       <a href="/#">
-                        <h4 class="showcase-title">super dog shampoo</h4>
+                        <h4 className="showcase-title">super dog shampoo</h4>
                       </a>
 
-                      <a href="/#" class="showcase-category">
+                      <a href="/#" className="showcase-category">
                         grooming
                       </a>
 
-                      <div class="price-box">
-                        <p class="price">₱120</p>
+                      <div className="price-box">
+                        <p className="price">₱120</p>
                         <del>₱150</del>
                       </div>
                     </div>
                   </div>
 
-                  <div class="showcase">
-                    <a href="/#" class="showcase-img-box">
+                  <div className="showcase">
+                    <a href="/#" className="showcase-img-box">
                       <img
                         src={Product18}
                         alt="dog shampoo"
-                        class="showcase-img"
+                        className="showcase-img"
                         width="70"
                       />
                     </a>
 
-                    <div class="showcase-content">
+                    <div className="showcase-content">
                       <a href="/#">
-                        <h4 class="showcase-title">ultimate dog shampoo</h4>
+                        <h4 className="showcase-title">ultimate dog shampoo</h4>
                       </a>
 
-                      <a href="/#" class="showcase-category">
+                      <a href="/#" className="showcase-category">
                         grooming
                       </a>
 
-                      <div class="price-box">
-                        <p class="price">₱150</p>
+                      <div className="price-box">
+                        <p className="price">₱150</p>
                         <del>₱160</del>
                       </div>
                     </div>
                   </div>
 
-                  <div class="showcase">
-                    <a href="/#" class="showcase-img-box">
+                  <div className="showcase">
+                    <a href="/#" className="showcase-img-box">
                       <img
                         src={Product19}
                         alt="water bowl"
-                        class="showcase-img"
+                        className="showcase-img"
                         width="70"
                       />
                     </a>
 
-                    <div class="showcase-content">
+                    <div className="showcase-content">
                       <a href="/#">
-                        <h4 class="showcase-title">portable water bowl</h4>
+                        <h4 className="showcase-title">portable water bowl</h4>
                       </a>
 
-                      <a href="/#" class="showcase-category">
+                      <a href="/#" className="showcase-category">
                         essentials
                       </a>
 
-                      <div class="price-box">
-                        <p class="price">₱94.00</p>
+                      <div className="price-box">
+                        <p className="price">₱94.00</p>
                         <del>₱120.00</del>
                       </div>
                     </div>
                   </div>
 
-                  <div class="showcase">
-                    <a href="/#" class="showcase-img-box">
+                  <div className="showcase">
+                    <a href="/#" className="showcase-img-box">
                       <img
                         src={Product20}
                         alt="portable water bottle"
-                        class="showcase-img"
+                        className="showcase-img"
                         width="70"
                       />
                     </a>
 
-                    <div class="showcase-content">
+                    <div className="showcase-content">
                       <a href="/#">
-                        <h4 class="showcase-title">
+                        <h4 className="showcase-title">
                           dog water bottle portable
                         </h4>
                       </a>
 
-                      <a href="/#" class="showcase-category">
+                      <a href="/#" className="showcase-category">
                         essentials
                       </a>
 
-                      <div class="price-box">
-                        <p class="price">₱300</p>
+                      <div className="price-box">
+                        <p className="price">₱300</p>
                         <del>₱450</del>
                       </div>
                     </div>
@@ -835,110 +935,116 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
               </div>
             </div>
 
-            <div class="product-showcase">
-              <h2 class="title">Top Rated</h2>
+            <div className="product-showcase">
+              <h2 className="title">Top Rated</h2>
 
-              <div class="showcase-wrapper  has-scrollbar">
-                <div class="showcase-container">
-                  <div class="showcase">
-                    <a href="/#" class="showcase-img-box">
+              <div className="showcase-wrapper  has-scrollbar">
+                <div className="showcase-container">
+                  <div className="showcase">
+                    <a href="/#" className="showcase-img-box">
                       <img
                         src={Product21}
                         alt="long dog leash - premium"
-                        class="showcase-img"
+                        className="showcase-img"
                         width="70"
                       />
                     </a>
 
-                    <div class="showcase-content">
+                    <div className="showcase-content">
                       <a href="/#">
-                        <h4 class="showcase-title">long dog leash - premium</h4>
+                        <h4 className="showcase-title">
+                          long dog leash - premium
+                        </h4>
                       </a>
 
-                      <a href="/#" class="showcase-category">
+                      <a href="/#" className="showcase-category">
                         dog accessories
                       </a>
 
-                      <div class="price-box">
-                        <p class="price">₱300</p>
+                      <div className="price-box">
+                        <p className="price">₱300</p>
                         <del>₱350</del>
                       </div>
                     </div>
                   </div>
 
-                  <div class="showcase">
-                    <a href="/#" class="showcase-img-box">
+                  <div className="showcase">
+                    <a href="/#" className="showcase-img-box">
                       <img
                         src={Product22}
                         alt="dog collar"
-                        class="showcase-img"
+                        className="showcase-img"
                         width="70"
                       />
                     </a>
 
-                    <div class="showcase-content">
+                    <div className="showcase-content">
                       <a href="/#">
-                        <h4 class="showcase-title">suelldog green collar</h4>
+                        <h4 className="showcase-title">
+                          suelldog green collar
+                        </h4>
                       </a>
 
-                      <a href="/#" class="showcase-category">
+                      <a href="/#" className="showcase-category">
                         dog accessories
                       </a>
 
-                      <div class="price-box">
-                        <p class="price">₱100</p>
+                      <div className="price-box">
+                        <p className="price">₱100</p>
                         <del>₱120</del>
                       </div>
                     </div>
                   </div>
 
-                  <div class="showcase">
-                    <a href="/#" class="showcase-img-box">
+                  <div className="showcase">
+                    <a href="/#" className="showcase-img-box">
                       <img
                         src={Product24}
                         alt="spiky dog collar"
-                        class="showcase-img"
+                        className="showcase-img"
                         width="70"
                       />
                     </a>
 
-                    <div class="showcase-content">
+                    <div className="showcase-content">
                       <a href="/#">
-                        <h4 class="showcase-title">dog collar with spikes</h4>
+                        <h4 className="showcase-title">
+                          dog collar with spikes
+                        </h4>
                       </a>
 
-                      <a href="/#" class="showcase-category">
+                      <a href="/#" className="showcase-category">
                         dog accessories
                       </a>
 
-                      <div class="price-box">
-                        <p class="price">₱300</p>
+                      <div className="price-box">
+                        <p className="price">₱300</p>
                         <del>₱500</del>
                       </div>
                     </div>
                   </div>
 
-                  <div class="showcase">
-                    <a href="/#" class="showcase-img-box">
+                  <div className="showcase">
+                    <a href="/#" className="showcase-img-box">
                       <img
                         src={Product25}
                         alt="dog toy rope"
-                        class="showcase-img"
+                        className="showcase-img"
                         width="70"
                       />
                     </a>
 
-                    <div class="showcase-content">
+                    <div className="showcase-content">
                       <a href="/#">
-                        <h4 class="showcase-title">rope toy</h4>
+                        <h4 className="showcase-title">rope toy</h4>
                       </a>
 
-                      <a href="/#" class="showcase-category">
+                      <a href="/#" className="showcase-category">
                         toys
                       </a>
 
-                      <div class="price-box">
-                        <p class="price">₱50</p>
+                      <div className="price-box">
+                        <p className="price">₱50</p>
                         <del>₱100</del>
                       </div>
                     </div>
@@ -950,22 +1056,22 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
 
           {/* <!-- featured product --> */}
 
-          <div class="product-featured">
-            <h2 class="title">featured product</h2>
+          <div className="product-featured">
+            <h2 className="title">featured product</h2>
 
-            <div class="showcase-wrapper has-scrollbar">
-              <div class="showcase-container">
-                <div class="showcase">
-                  <div class="showcase-banner">
+            <div className="showcase-wrapper has-scrollbar">
+              <div className="showcase-container">
+                <div className="showcase">
+                  <div className="showcase-banner">
                     <img
                       src={SuelloKingDog}
                       alt="suellodog kingdog treats"
-                      class="showcase-img"
+                      className="showcase-img"
                     />
                   </div>
 
-                  <div class="showcase-content">
-                    <div class="showcase-rating">
+                  <div className="showcase-content">
+                    <div className="showcase-rating">
                       <IonIcon icon={star} />
                       <IonIcon icon={star} />
                       <IonIcon icon={star} />
@@ -974,25 +1080,27 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                     </div>
 
                     <a href="#">
-                      <h3 class="showcase-title">
+                      <h3 className="showcase-title">
                         suellodog kingdog premium treats - 100g
                       </h3>
                     </a>
 
-                    <p class="showcase-desc">dog treats fit for a kingdog</p>
+                    <p className="showcase-desc">
+                      dog treats fit for a kingdog
+                    </p>
 
-                    <div class="price-box">
-                      <p class="price">₱900.00</p>
+                    <div className="price-box">
+                      <p className="price">₱900.00</p>
 
                       <del>₱1000.00</del>
                     </div>
 
-                    <button class="add-cart-btn" onClick={addToCart}>
+                    <button className="add-cart-btn" onClick={addToCart}>
                       add to cart
                     </button>
 
-                    <div class="showcase-status">
-                      <div class="wrapper">
+                    <div className="showcase-status">
+                      <div className="wrapper">
                         <p>
                           already sold: <b>30</b>
                         </p>
@@ -1002,32 +1110,32 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                         </p>
                       </div>
 
-                      <div class="showcase-status-bar"></div>
+                      <div className="showcase-status-bar"></div>
                     </div>
 
-                    <div class="countdown-box">
-                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+                    <div className="countdown-box">
+                      <p className="countdown-desc">Hurry Up! Offer ends in:</p>
 
-                      <div class="countdown">
-                        <div class="countdown-content">
-                          <p class="display-number">5</p>
+                      <div className="countdown">
+                        <div className="countdown-content">
+                          <p className="display-number">5</p>
 
-                          <p class="display-text">Days</p>
+                          <p className="display-text">Days</p>
                         </div>
 
-                        <div class="countdown-content">
-                          <p class="display-number">24</p>
-                          <p class="display-text">Hours</p>
+                        <div className="countdown-content">
+                          <p className="display-number">24</p>
+                          <p className="display-text">Hours</p>
                         </div>
 
-                        <div class="countdown-content">
-                          <p class="display-number">59</p>
-                          <p class="display-text">Min</p>
+                        <div className="countdown-content">
+                          <p className="display-number">59</p>
+                          <p className="display-text">Min</p>
                         </div>
 
-                        <div class="countdown-content">
-                          <p class="display-number">00</p>
-                          <p class="display-text">Sec</p>
+                        <div className="countdown-content">
+                          <p className="display-number">00</p>
+                          <p className="display-text">Sec</p>
                         </div>
                       </div>
                     </div>
@@ -1039,56 +1147,58 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
 
           {/* PRODUCT GRID */}
 
-          <div class="product-main">
-            <h2 class="title">New Products</h2>
+          <div className="product-main">
+            <h2 className="title">New Products</h2>
 
-            <div class="product-grid">
-              <div class="showcase">
-                <div class="showcase-banner">
+            <div className="product-grid">
+              <div className="showcase">
+                <div className="showcase-banner">
                   <img
                     src={Product1}
                     alt="balls"
                     width="300"
-                    class="product-img default"
+                    className="product-img default"
                   />
                   <img
                     src={Product1r}
                     alt="balls"
                     width="300"
-                    class="product-img hover"
+                    className="product-img hover"
                   />
 
-                  <p class="showcase-badge">15%</p>
+                  <p className="showcase-badge">15%</p>
 
-                  <div class="showcase-actions">
-                    <button class="btn-action" onClick={addLikedItems}>
+                  <div className="showcase-actions">
+                    <button className="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={eyeOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action" onClick={addToCart}>
+                    <button className="btn-action" onClick={addToCart}>
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
                 </div>
 
-                <div class="showcase-content">
-                  <a href="/#" class="showcase-category">
+                <div className="showcase-content">
+                  <a href="/#" className="showcase-category">
                     toys
                   </a>
 
                   <a href="/#">
-                    <h3 class="showcase-title">assorted toy balls - 4 pcs</h3>
+                    <h3 className="showcase-title">
+                      assorted toy balls - 4 pcs
+                    </h3>
                   </a>
 
-                  <div class="showcase-rating">
+                  <div className="showcase-rating">
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
@@ -1096,61 +1206,61 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                     <IonIcon icon={starOutline} />
                   </div>
 
-                  <div class="price-box">
-                    <p class="price">₱50.00</p>
+                  <div className="price-box">
+                    <p className="price">₱50.00</p>
                     <del>₱75.00</del>
                   </div>
                 </div>
               </div>
 
-              <div class="showcase">
-                <div class="showcase-banner">
+              <div className="showcase">
+                <div className="showcase-banner">
                   <img
                     src={Product2}
                     alt="special food bowl"
-                    class="product-img default"
+                    className="product-img default"
                     width="300"
                   />
                   <img
                     src={Product2r}
                     alt="special food bowl"
-                    class="product-img hover"
+                    className="product-img hover"
                     width="300"
                   />
 
-                  <p class="showcase-badge angle black">sale</p>
+                  <p className="showcase-badge angle black">sale</p>
 
-                  <div class="showcase-actions">
-                    <button class="btn-action" onClick={addLikedItems}>
+                  <div className="showcase-actions">
+                    <button className="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={eyeOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action" onClick={addToCart}>
+                    <button className="btn-action" onClick={addToCart}>
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
                 </div>
 
-                <div class="showcase-content">
-                  <a href="/#" class="showcase-category">
+                <div className="showcase-content">
+                  <a href="/#" className="showcase-category">
                     essentials
                   </a>
 
                   <h3>
-                    <a href="/#" class="showcase-title">
+                    <a href="/#" className="showcase-title">
                       orange food bowl - large
                     </a>
                   </h3>
 
-                  <div class="showcase-rating">
+                  <div className="showcase-rating">
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
@@ -1158,59 +1268,59 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                     <IonIcon icon={star} />
                   </div>
 
-                  <div class="price-box">
-                    <p class="price">₱200.00</p>
+                  <div className="price-box">
+                    <p className="price">₱200.00</p>
                     <del>₱230.00</del>
                   </div>
                 </div>
               </div>
 
-              <div class="showcase">
-                <div class="showcase-banner">
+              <div className="showcase">
+                <div className="showcase-banner">
                   <img
                     src={Product7}
                     alt="dog toothbrush"
-                    class="product-img default"
+                    className="product-img default"
                     width="300"
                   />
                   <img
                     src={Product7r}
                     alt="dog toothbrush"
-                    class="product-img hover"
+                    className="product-img hover"
                     width="300"
                   />
 
-                  <div class="showcase-actions">
-                    <button class="btn-action" onClick={addLikedItems}>
+                  <div className="showcase-actions">
+                    <button className="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={eyeOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action" onClick={addToCart}>
+                    <button className="btn-action" onClick={addToCart}>
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
                 </div>
 
-                <div class="showcase-content">
-                  <a href="/#" class="showcase-category">
+                <div className="showcase-content">
+                  <a href="/#" className="showcase-category">
                     grooming
                   </a>
 
                   <h3>
-                    <a href="/#" class="showcase-title">
+                    <a href="/#" className="showcase-title">
                       premium dog tooth brush - 2pcs
                     </a>
                   </h3>
 
-                  <div class="showcase-rating">
+                  <div className="showcase-rating">
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
@@ -1218,61 +1328,61 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                     <IonIcon icon={starOutline} />
                   </div>
 
-                  <div class="price-box">
-                    <p class="price">₱300.00</p>
+                  <div className="price-box">
+                    <p className="price">₱300.00</p>
                     <del>₱320.00</del>
                   </div>
                 </div>
               </div>
 
-              <div class="showcase">
-                <div class="showcase-banner">
+              <div className="showcase">
+                <div className="showcase-banner">
                   <img
                     src={Product3}
                     alt="SuelloDog leash"
-                    class="product-img default"
+                    className="product-img default"
                     width="300"
                   />
                   <img
                     src={Product3r}
                     alt="SuelloDog leash"
-                    class="product-img hover"
+                    className="product-img hover"
                     width="300"
                   />
 
-                  <p class="showcase-badge angle pink">new</p>
+                  <p className="showcase-badge angle pink">new</p>
 
-                  <div class="showcase-actions">
-                    <button class="btn-action" onClick={addLikedItems}>
+                  <div className="showcase-actions">
+                    <button className="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={eyeOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action" onClick={addToCart}>
+                    <button className="btn-action" onClick={addToCart}>
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
                 </div>
 
-                <div class="showcase-content">
-                  <a href="/#" class="showcase-category">
+                <div className="showcase-content">
+                  <a href="/#" className="showcase-category">
                     dog accessories
                   </a>
 
                   <h3>
-                    <a href="/#" class="showcase-title">
+                    <a href="/#" className="showcase-title">
                       suellodog unleash the dog leash
                     </a>
                   </h3>
 
-                  <div class="showcase-rating">
+                  <div className="showcase-rating">
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
@@ -1280,59 +1390,59 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                     <IonIcon icon={star} />
                   </div>
 
-                  <div class="price-box">
-                    <p class="price">₱1100.00</p>
+                  <div className="price-box">
+                    <p className="price">₱1100.00</p>
                     <del>₱1300.00</del>
                   </div>
                 </div>
               </div>
 
-              <div class="showcase">
-                <div class="showcase-banner">
+              <div className="showcase">
+                <div className="showcase-banner">
                   <img
                     src={Product4}
                     alt="Nutrients Emperor kibbles"
-                    class="product-img default"
+                    className="product-img default"
                     width="300"
                   />
                   <img
                     src={Product4r}
                     alt="Nutrients Emperor kibbles"
-                    class="product-img hover"
+                    className="product-img hover"
                     width="300"
                   />
 
-                  <div class="showcase-actions">
-                    <button class="btn-action" onClick={addLikedItems}>
+                  <div className="showcase-actions">
+                    <button className="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={eyeOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action" onClick={addToCart}>
+                    <button className="btn-action" onClick={addToCart}>
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
                 </div>
 
-                <div class="showcase-content">
-                  <a href="/#" class="showcase-category">
+                <div className="showcase-content">
+                  <a href="/#" className="showcase-category">
                     food
                   </a>
 
                   <h3>
-                    <a href="/#" class="showcase-title">
+                    <a href="/#" className="showcase-title">
                       suellodog protein-king kibbles - 2kl
                     </a>
                   </h3>
 
-                  <div class="showcase-rating">
+                  <div className="showcase-rating">
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
@@ -1340,61 +1450,61 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                     <IonIcon icon={star} />
                   </div>
 
-                  <div class="price-box">
-                    <p class="price">₱500.00</p>
+                  <div className="price-box">
+                    <p className="price">₱500.00</p>
                     <del>₱600.00</del>
                   </div>
                 </div>
               </div>
 
-              <div class="showcase">
-                <div class="showcase-banner">
+              <div className="showcase">
+                <div className="showcase-banner">
                   <img
                     src={Product5}
                     alt="hair brush"
-                    class="product-img default"
+                    className="product-img default"
                     width="300"
                   />
                   <img
                     src={Product5r}
                     alt="hair brush"
-                    class="product-img hover"
+                    className="product-img hover"
                     width="300"
                   />
 
-                  <p class="showcase-badge angle black">sale</p>
+                  <p className="showcase-badge angle black">sale</p>
 
-                  <div class="showcase-actions">
-                    <button class="btn-action" onClick={addLikedItems}>
+                  <div className="showcase-actions">
+                    <button className="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={eyeOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
                 </div>
 
-                <div class="showcase-content">
-                  <a href="/#" class="showcase-category">
+                <div className="showcase-content">
+                  <a href="/#" className="showcase-category">
                     grooming
                   </a>
 
                   <h3>
-                    <a href="/#" class="showcase-title">
+                    <a href="/#" className="showcase-title">
                       mythril dog brush - large
                     </a>
                   </h3>
 
-                  <div class="showcase-rating">
+                  <div className="showcase-rating">
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
@@ -1402,59 +1512,59 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                     <IonIcon icon={star} />
                   </div>
 
-                  <div class="price-box">
-                    <p class="price">₱150.00</p>
+                  <div className="price-box">
+                    <p className="price">₱150.00</p>
                     <del>₱170.00</del>
                   </div>
                 </div>
               </div>
 
-              <div class="showcase">
-                <div class="showcase-banner">
+              <div className="showcase">
+                <div className="showcase-banner">
                   <img
                     src={Product6}
                     alt="assorted bowls"
-                    class="product-img default"
+                    className="product-img default"
                     width="300"
                   />
                   <img
                     src={Product6r}
                     alt="assorted bowls"
-                    class="product-img hover"
+                    className="product-img hover"
                     width="300"
                   />
 
-                  <div class="showcase-actions">
-                    <button className="btn-action" onClick={addLikedItems}>
+                  <div className="showcase-actions">
+                    <button classNameName="btn-action" onClick={addLikedItems}>
                       <IonIcon icon={heartOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={eyeOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
                 </div>
 
-                <div class="showcase-content">
-                  <a href="/#" class="showcase-category">
+                <div className="showcase-content">
+                  <a href="/#" className="showcase-category">
                     essentials
                   </a>
 
                   <h3>
-                    <a href="/#" class="showcase-title">
+                    <a href="/#" className="showcase-title">
                       assorted food bowls - 3pcs
                     </a>
                   </h3>
 
-                  <div class="showcase-rating">
+                  <div className="showcase-rating">
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
@@ -1462,61 +1572,61 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                     <IonIcon icon={starOutline} />
                   </div>
 
-                  <div class="price-box">
-                    <p class="price">₱300.00</p>
+                  <div className="price-box">
+                    <p className="price">₱300.00</p>
                     <del>₱320.00</del>
                   </div>
                 </div>
               </div>
 
-              <div class="showcase">
-                <div class="showcase-banner">
+              <div className="showcase">
+                <div className="showcase-banner">
                   <img
                     src={Product8}
                     alt="large dog harness"
-                    class="product-img default"
+                    className="product-img default"
                     width="300"
                   />
                   <img
                     src={Product8r}
                     alt="large dog harness"
-                    class="product-img hover"
+                    className="product-img hover"
                     width="300"
                   />
 
-                  <p class="showcase-badge angle black">sale</p>
+                  <p className="showcase-badge angle black">sale</p>
 
-                  <div class="showcase-actions">
-                    <button class="btn-action">
+                  <div className="showcase-actions">
+                    <button className="btn-action">
                       <IonIcon icon={heartOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={eyeOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
                 </div>
 
-                <div class="showcase-content">
-                  <a href="/#" class="showcase-category">
+                <div className="showcase-content">
+                  <a href="/#" className="showcase-category">
                     dog accessories
                   </a>
 
                   <h3>
-                    <a href="/#" class="showcase-title">
+                    <a href="/#" className="showcase-title">
                       suellodog harness the power of darkness harness
                     </a>
                   </h3>
 
-                  <div class="showcase-rating">
+                  <div className="showcase-rating">
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
@@ -1524,60 +1634,60 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                     <IonIcon icon={star} />
                   </div>
 
-                  <div class="price-box">
-                    <p class="price">₱2500.00</p>
+                  <div className="price-box">
+                    <p className="price">₱2500.00</p>
                     <del>₱2630.00</del>
                   </div>
                 </div>
               </div>
 
-              <div class="showcase">
-                <div class="showcase-banner">
+              <div className="showcase">
+                <div className="showcase-banner">
                   <img
                     src={Product9}
                     alt="automatic feeder"
-                    class="product-img default"
+                    className="product-img default"
                     width="300"
                   />
                   <img
                     src={Product9r}
                     alt="automatic feeder"
-                    class="product-img hover"
+                    className="product-img hover"
                     width="300"
                   />
 
-                  <div class="showcase-actions">
-                    <button class="btn-action">
+                  <div className="showcase-actions">
+                    <button className="btn-action">
                       <ion-icon name="heart-outline"></ion-icon>
                       <IonIcon icon={heartOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={eyeOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
                 </div>
 
-                <div class="showcase-content">
-                  <a href="/#" class="showcase-category">
+                <div className="showcase-content">
+                  <a href="/#" className="showcase-category">
                     essentials
                   </a>
 
                   <h3>
-                    <a href="/#" class="showcase-title">
+                    <a href="/#" className="showcase-title">
                       auto feeder - wifi and text capable
                     </a>
                   </h3>
 
-                  <div class="showcase-rating">
+                  <div className="showcase-rating">
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
@@ -1585,61 +1695,61 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                     <IonIcon icon={star} />
                   </div>
 
-                  <div class="price-box">
-                    <p class="price">₱5000.00</p>
+                  <div className="price-box">
+                    <p className="price">₱5000.00</p>
                     <del>₱6000.00</del>
                   </div>
                 </div>
               </div>
 
-              <div class="showcase">
-                <div class="showcase-banner">
+              <div className="showcase">
+                <div className="showcase-banner">
                   <img
                     src={Product10}
                     alt="adjustable leash"
-                    class="product-img default"
+                    className="product-img default"
                     width="300"
                   />
                   <img
                     src={Product10r}
                     alt="adjustable leash"
-                    class="product-img hover"
+                    className="product-img hover"
                     width="300"
                   />
 
-                  <p class="showcase-badge angle black">sale</p>
+                  <p className="showcase-badge angle black">sale</p>
 
-                  <div class="showcase-actions">
-                    <button class="btn-action">
+                  <div className="showcase-actions">
+                    <button className="btn-action">
                       <IonIcon icon={heartOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={eyeOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
                 </div>
 
-                <div class="showcase-content">
-                  <a href="/#" class="showcase-category">
+                <div className="showcase-content">
+                  <a href="/#" className="showcase-category">
                     dog accessories
                   </a>
 
                   <h3>
-                    <a href="/#" class="showcase-title">
+                    <a href="/#" className="showcase-title">
                       suellodog retractable leash with toothpick
                     </a>
                   </h3>
 
-                  <div class="showcase-rating">
+                  <div className="showcase-rating">
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
@@ -1647,59 +1757,59 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                     <IonIcon icon={star} />
                   </div>
 
-                  <div class="price-box">
-                    <p class="price">₱1080.00</p>
+                  <div className="price-box">
+                    <p className="price">₱1080.00</p>
                     <del>₱1200.00</del>
                   </div>
                 </div>
               </div>
 
-              <div class="showcase">
-                <div class="showcase-banner">
+              <div className="showcase">
+                <div className="showcase-banner">
                   <img
                     src={Product11}
                     alt="medium dog harness"
-                    class="product-img default"
+                    className="product-img default"
                     width="300"
                   />
                   <img
                     src={Product11r}
                     alt="medium dog harness"
-                    class="product-img hover"
+                    className="product-img hover"
                     width="300"
                   />
 
-                  <div class="showcase-actions">
-                    <button class="btn-action">
+                  <div className="showcase-actions">
+                    <button className="btn-action">
                       <IonIcon icon={heartOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={eyeOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
                 </div>
 
-                <div class="showcase-content">
-                  <a href="/#" class="showcase-category">
+                <div className="showcase-content">
+                  <a href="/#" className="showcase-category">
                     dog accessories
                   </a>
 
                   <h3>
-                    <a href="/#" class="showcase-title">
+                    <a href="/#" className="showcase-title">
                       suellodog harness the power of air harness
                     </a>
                   </h3>
 
-                  <div class="showcase-rating">
+                  <div className="showcase-rating">
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
@@ -1707,61 +1817,61 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                     <IonIcon icon={star} />
                   </div>
 
-                  <div class="price-box">
-                    <p class="price">₱2300.00</p>
+                  <div className="price-box">
+                    <p className="price">₱2300.00</p>
                     <del>₱2400.00</del>
                   </div>
                 </div>
               </div>
 
-              <div class="showcase">
-                <div class="showcase-banner">
+              <div className="showcase">
+                <div className="showcase-banner">
                   <img
                     src={Product12}
                     alt="finger brush"
-                    class="product-img default"
+                    className="product-img default"
                     width="300"
                   />
                   <img
                     src={Product12r}
                     alt="finger brush"
-                    class="product-img hover"
+                    className="product-img hover"
                     width="300"
                   />
 
-                  <p class="showcase-badge angle black">sale</p>
+                  <p className="showcase-badge angle black">sale</p>
 
-                  <div class="showcase-actions">
-                    <button class="btn-action">
+                  <div className="showcase-actions">
+                    <button className="btn-action">
                       <IonIcon icon={heartOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={eyeOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={repeatOutline} />
                     </button>
 
-                    <button class="btn-action">
+                    <button className="btn-action">
                       <IonIcon icon={bagAddOutline} />
                     </button>
                   </div>
                 </div>
 
-                <div class="showcase-content">
-                  <a href="/#" class="showcase-category">
+                <div className="showcase-content">
+                  <a href="/#" className="showcase-category">
                     grooming
                   </a>
 
                   <h3>
-                    <a href="/#" class="showcase-title">
+                    <a href="/#" className="showcase-title">
                       Rubber Finger Brush - 1pc blue
                     </a>
                   </h3>
 
-                  <div class="showcase-rating">
+                  <div className="showcase-rating">
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
                     <IonIcon icon={star} />
@@ -1769,8 +1879,8 @@ const ProductSection = ({ addLikedItems, removeLikedItems, addToCart }) => {
                     <IonIcon icon={starOutline} />
                   </div>
 
-                  <div class="price-box">
-                    <p class="price">₱90.00</p>
+                  <div className="price-box">
+                    <p className="price">₱90.00</p>
                     <del>₱100.00</del>
                   </div>
                 </div>

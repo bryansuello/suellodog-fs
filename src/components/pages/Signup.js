@@ -11,12 +11,19 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleChange = e => {
+  const submitForm = e => {
     e.preventDefault();
     if (password !== confirmPassword) {
-      alert('passwords not the same');
+      alert('Passwords do not match.');
     } else {
-      console.log(password, confirmPassword);
+      const signupData = {
+        first_name: firstName,
+        last_name: lastName,
+        email: email,
+        password: password,
+        confirm_password: confirmPassword,
+      };
+      console.log(signupData);
     }
   };
 
@@ -61,7 +68,7 @@ const Signup = () => {
         <div className="body-right">
           <div className="container">
             <h1>Sign Up</h1>
-            <form onSubmit={handleChange}>
+            <form onSubmit={submitForm}>
               <div className="input-group">
                 <input
                   type="text"
@@ -72,6 +79,7 @@ const Signup = () => {
                   }}
                   id="fname"
                   placeholder="First Name"
+                  required
                   // onChange={handleChange}
                   // value={data.first_name}
                 />
@@ -86,6 +94,7 @@ const Signup = () => {
                   }}
                   id="lname"
                   placeholder="Last Name"
+                  required
                   // onChange={handleChange}
                   // value={data.last_name}
                 />
@@ -100,6 +109,7 @@ const Signup = () => {
                   }}
                   id="email1"
                   placeholder="Email"
+                  required
                   // onChange={handleChange}
                   // value={data.email}
                 />
@@ -114,6 +124,7 @@ const Signup = () => {
                   name="password"
                   id="pwd1"
                   placeholder="Password"
+                  required
                   // onChange={handleChange}
                   // value={data.password}
                 />
@@ -128,6 +139,7 @@ const Signup = () => {
                   name="password"
                   id="pwd2"
                   placeholder="Confirm Password"
+                  required
                   // onChange={handleChange}
                   // value={data.password}
                 />
