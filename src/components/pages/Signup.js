@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './Signup.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import registerImg from '../../assets/banners/banner-2.png';
 import logo from '../../assets/icons/nav-logo-g.png';
+import axios from 'axios';
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -11,19 +12,42 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
+  let history = useNavigate();
+
   const submitForm = e => {
     e.preventDefault();
     if (password !== confirmPassword) {
       alert('Passwords do not match.');
     } else {
-      const signupData = {
-        first_name: firstName,
-        last_name: lastName,
-        email: email,
-        password: password,
-        confirm_password: confirmPassword,
-      };
-      console.log(signupData);
+      // const signupData = {
+      //   first_name: firstName,
+      //   last_name: lastName,
+      //   email: email,
+      //   password: password,
+      //   confirm_password: confirmPassword,
+      // };
+      // console.log(signupData);
+      // axios.post('', sendData).then(result => {
+      //   if (result.data.Status === 'Invalid') {
+      //     alert('Invalid user');
+      //   } else {
+      //     history('/signup');
+      //   }
+      // });
+      const url = 'http://localhost/signup.php';
+
+      let formData = new FormData();
+      formData.append('firstName', firstName);
+      formData.append('lastName', lastName);
+      formData.append('email', email);
+      formData.append('password', password);
+      formData.append('confirmPassword', confirmPassword);
+      console.log(formData);
+
+      axios
+        .post(url, formData)
+        .then(response => alert(response.data))
+        .catch(error => alert(error));
     }
   };
 
