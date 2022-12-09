@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 // import ChatToTop from './components/ChatToTop';
 import Signup from './components/pages/Signup';
 import Login from './components/pages/Login';
+import CartPage from './components/pages/Cart/CartPage';
+import LikedPage from './components/pages/LikedPage/LikedPage';
 import { Route, Routes } from 'react-router';
 
 function App() {
@@ -53,6 +55,8 @@ function App() {
         />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/likeditems" element={<LikedPage />} />
       </Routes>
       <Footer />
       {/* <ChatToTop /> */}

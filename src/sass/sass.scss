@@ -2837,6 +2837,11 @@ footer {
     transition: var(--transition-timing);
   }
 
+.cart-icon, .cart-icon:link .cart-icon:visited,
+.liked-items, .liked-items:link, .liked-items:visited{
+    color: var(--onyx);
+}
+
   .desktop-menu-category-list .menu-category > .menu-title:hover {
     color: var(--brand-cta-orange);
   }

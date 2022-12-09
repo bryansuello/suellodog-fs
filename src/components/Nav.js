@@ -141,14 +141,18 @@ const Header = ({ likedItems, cartItems }) => {
             </div>
 
             <button className="action-btn">
+              <Link to="/likeditems" className="liked-items">
               <IonIcon icon={heartOutline} />
               <span className="count">{likedItems}</span>
+              </Link>
             </button>
 
             <button className="action-btn">
               {/* <ion-icon name="bag-handle-outline"></ion-icon> */}
-              <IonIcon icon={cartOutline} />
-              <span className="count">{cartItems}</span>
+              <Link to="/cart" className="cart-icon">
+                <IonIcon icon={cartOutline} />
+                <span className="count">{cartItems}</span>
+              </Link>
             </button>
           </div>
         </div>

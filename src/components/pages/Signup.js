@@ -104,8 +104,8 @@ const Signup = () => {
                   id="fname"
                   placeholder="First Name"
                   required
-                  // onChange={handleChange}
-                  // value={data.first_name}
+                // onChange={handleChange}
+                // value={data.first_name}
                 />
               </div>
               <div className="input-group">
@@ -119,8 +119,8 @@ const Signup = () => {
                   id="lname"
                   placeholder="Last Name"
                   required
-                  // onChange={handleChange}
-                  // value={data.last_name}
+                // onChange={handleChange}
+                // value={data.last_name}
                 />
               </div>
               <div className="input-group">
@@ -134,8 +134,8 @@ const Signup = () => {
                   id="email1"
                   placeholder="Email"
                   required
-                  // onChange={handleChange}
-                  // value={data.email}
+                // onChange={handleChange}
+                // value={data.email}
                 />
               </div>
               <div className="input-group">
@@ -149,8 +149,8 @@ const Signup = () => {
                   id="pwd1"
                   placeholder="Password"
                   required
-                  // onChange={handleChange}
-                  // value={data.password}
+                // onChange={handleChange}
+                // value={data.password}
                 />
               </div>
               <div className="input-group">
@@ -164,8 +164,8 @@ const Signup = () => {
                   id="pwd2"
                   placeholder="Confirm Password"
                   required
-                  // onChange={handleChange}
-                  // value={data.password}
+                // onChange={handleChange}
+                // value={data.password}
                 />
               </div>
               <input type="submit" id="sbtn" value="Submit" />
